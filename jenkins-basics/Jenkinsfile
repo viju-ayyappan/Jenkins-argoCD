@@ -32,6 +32,12 @@ pipeline {
                 echo "Your website is live now!"
             }
         }
+        stage('Dummy Message') {
+            steps {
+                // Display a message indicating the website is live
+                echo "Voila, Your First Pipeline"
+            }
+        }
     }
 
     post {
